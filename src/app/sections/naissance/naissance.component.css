@@ -1,0 +1,41 @@
+/*section NAISSANCE :sombre et menaçant*/
+ #birth {
+    background: rgba(20, 49, 20, 1);
+    padding:5%; 
+    /* border:1px solid rgba(255,255,255,0.1); */
+}
+
+h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color:rgb(187, 3, 3)
+
+}
+
+h2 {
+    font-family:'cinzel', serif;
+    font-size:2rem;
+    color:#d4af37;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+}
+.accroche {
+    font-family:'cinzel', serif;
+    font-size:1.5rem;
+     font-style: italic;
+     color:white
+}
+
+.narratif {
+    font-size:1.2rem;
+    line-height:1.5;
+    font-family: 'lora', sans-serif;
+    text-align: justify;
+    color:white
+}
+
+
+ 

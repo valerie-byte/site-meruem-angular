@@ -1,0 +1,17 @@
+#footer {
+    background: rgba(0,0,0,1);
+     height: 15vh;
+     color:white
+}
+
+.block-footer {
+    justify-content: center;    
+    display: flex;
+    align-items:center;
+    flex-direction: column;
+} 
+.narratif {
+    font-size:1rem;
+    font-family: 'lora', sans-serif;
+    color:white;
+}

@@ -1,0 +1,88 @@
+h1 {
+    font-size: 3rem;
+    border-bottom: 2px solid currentColor;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color:rgb(187, 3, 3)
+
+}
+h2 {
+    font-family:'cinzel', serif;
+    font-size:2rem;
+    color:#665007;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+   
+}
+
+/* utilisation d'une grid */
+:host {
+    display:block;
+    background: linear-gradient(rgba(250, 137, 25, 0.5), rgba(97, 52, 10, 0.315));
+}
+
+/* plateau container */
+.gungi-board {
+    margin:50px auto;
+    width: 600px;
+    height: 600px;
+    /* on déclare la grille */
+    display:grid;
+    /* 3 colonnes de 1 unité */
+    grid-template-columns: repeat(9,1fr);
+    grid-template-rows: repeat(9,1fr);
+    background-color: #f3e5ab;
+    border:10px solid #8b5a2b;
+    border-radius: 5px;
+    /* ajoute une ombre */
+    box-shadow:0 15px 30px rgba(0,0,0,0.7);
+    padding:10px;
+
+}
+
+/* les cases du plateau */
+.cell {
+    border:1px solid rgba(139,90,43,0.5);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    /* position de l'éclat à l'intérieur */
+    position:relative;
+    /* le contenu est tronqué */
+    overflow:hidden;
+}
+
+/*style de base de la pièce gungi*/
+.gungi-piece{
+    width:70px;
+    height:70px;
+    /* transition fluide avec un rebond */
+    transition:all 0.4s cubic-bezier(0.175,0.885, 0.32, 1.275);
+    filter:drop-shadow (0 5px 15px rgba(0, 0, 0, 0.5));
+    z-index: 10;
+    cursor:pointer
+}
+/* animation au survol de la pièce avec :hover */
+.gungi-piece:hover {
+/* la pièce grossit et monte un peu */
+    transform:translateY(-10px) scale(1.15) rotate(10deg);
+    /* ajoute un éclat doré */
+    filter:drop-shadow(0 0 25px rgba(212, 175, 55, 0.8)) brightness(1.3);
+}
+
+/* éclat de fond dans la case au survol */
+.cell:hover::after {
+    content:"";
+    position: absolute;
+    width:100%;
+    height:100%;
+    background: radial-gradient(circle, rgba(22, 21, 21, 0.4) 0%, rgba(255,255,255,0) 70%);
+    z-index:5;
+    animation:pulse 1s infinite alternate;
+}
+
+@keyframes pulse {
+    from {opacity:0.5;}
+    to {opacity: 1;}
+    
+}
