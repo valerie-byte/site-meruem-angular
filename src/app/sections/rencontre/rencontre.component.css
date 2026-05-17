@@ -5,6 +5,8 @@
         /* url("../../../assets/images/plateau-gungi-blanc.png"); */
     background-repeat: no-repeat;
     background-size: cover;
+    padding:5%;
+
 }
 
 :host {
@@ -19,7 +21,7 @@
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     border-bottom: 2px solid currentColor;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -29,7 +31,7 @@ h1 {
 
 h2 {
     font-family:'cinzel', serif;
-    font-size:2rem;
+    font-size:1.5rem;
     color:#665007;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -37,19 +39,18 @@ h2 {
 }
 .accroche {
     font-family:'cinzel', serif;
-    font-size:1.5rem;
+    font-size:1.3rem;
      font-style: italic;
-     color:white
+     color:black
 }
 
 
 .narratif {
-    font-size:1.2rem;
+    font-size:1.1rem;
     line-height:1.5;
     font-family: 'lora', sans-serif;
     text-align: justify;
-    color:white
-   
+    color:black   
 }
 
 

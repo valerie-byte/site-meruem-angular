@@ -8,7 +8,6 @@
     justify-content: space-around;
     align-items: center;
     background: rgba(0,0,0,1);
-    /* height: 8vh; */
     z-index: 1000;
     color:white
 }
@@ -94,10 +93,13 @@ nav div {
     line-height:0; 
     inset-block-start:130px;
     
-    
  }
 
- .wave-container path {
+ .wave-container  {
     /* couleur fond header */
     fill:rgba(0, 0, 0, 1);
+    height:60px;
+    display:block;
+    width:100%
+    
  }

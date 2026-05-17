@@ -1,12 +1,16 @@
 /*section NAISSANCE :sombre et menaçant*/
  #birth {
-    background: rgba(20, 49, 20, 1);
-    padding:5%; 
-    /* border:1px solid rgba(255,255,255,0.1); */
+    background: rgba(20, 49, 20, 0.986);
+    /* padding:5%;  */
+    /* width:100%; */
+    display: flex;
+    flex-direction:column;
+    justify-content: center;
+    align-items: center;
 }
 
 h1 {
-    font-size: 3rem;
+    font-size: 2rem;
     border-bottom: 2px solid currentColor;
     padding-bottom: 10px;
     text-transform: uppercase;
@@ -16,7 +20,7 @@ h1 {
 
 h2 {
     font-family:'cinzel', serif;
-    font-size:2rem;
+    font-size:1.5rem;
     color:#d4af37;
     margin-bottom: 20px;
     text-transform: uppercase;
@@ -24,13 +28,32 @@ h2 {
 }
 .accroche {
     font-family:'cinzel', serif;
-    font-size:1.5rem;
-     font-style: italic;
-     color:white
+    font-size:1.3rem;
+    font-style: italic;
+    color:white;
+    
 }
 
+.birth_meruem {
+    display:flex;
+    align-items:center;
+    gap:30px
+    
+}
+@media (max-width:768px) {
+    .birth_meruem{
+        flex-direction:column;
+        text-align:center 
+    }
+    .img{
+        width:80%;
+        max-width:250px
+    }
+}
+
+
 .narratif {
-    font-size:1.2rem;
+    font-size:1.1rem;
     line-height:1.5;
     font-family: 'lora', sans-serif;
     text-align: justify;
