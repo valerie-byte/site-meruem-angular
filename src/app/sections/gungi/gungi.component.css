@@ -21,6 +21,31 @@ h2 {
     background: linear-gradient(rgba(250, 137, 25, 0.5), rgba(97, 52, 10, 0.315));
 }
 
+/* div image et plateau */
+.board {
+    display: flex;
+    align-items: center;
+    gap:20px
+    
+}
+
+img {
+    
+    height:400px;
+
+}
+@media (max-width:768px) {
+    .board{
+        flex-direction:column;
+        text-align:center 
+    }
+
+    img {
+        width:80%;
+        max-width:300px
+    }
+}
+
 /* plateau container */
 .gungi-board {
     margin:50px auto;
