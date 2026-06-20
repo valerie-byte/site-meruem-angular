@@ -56,7 +56,7 @@ export class AppComponent implements OnInit {
       {property:'og :description', content:'Découvrez l\'histoire immersive de Meruem, roi des fourmis chimères. De sa naissance terrifiante à sa rédemption auprès de Komugi avec le gungi'},
       {property:'og :image', content:'https://assets/images.img_partage.png'},
       { property:'og :title', content:'valerie-byte'},
-      { property:'og :url, content:’https://tonsite'},
+      { property:'og :url, content:’https://site-meruem-angular.vercel.app/'},
       { property:'og :type', content:'website'}
     ])
 
@@ -65,7 +65,7 @@ export class AppComponent implements OnInit {
       {name:'twitter:card', content:'summary_large_image'},
       {name:'twitter:title', content:'Meruem - roi des fourmis chimères'},
       {name:'twitter:description', content:'Découvrez l\'histoire immersive de Meruem, roi des fourmis chimères. De sa naissance terrifiante à sa rédemption auprès de Komugi avec le gungi'},
-      {name:'twitter:image', content:'https://nom-site'},
+      {name:'twitter:image', content:'https://site-meruem-angular.vercel.app/'},
     ])
 
   }
